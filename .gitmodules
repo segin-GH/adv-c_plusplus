@@ -1,0 +1,6 @@
+[submodule "c++"]
+	path = c++
+	url = https://github.com/segin-GH/c_plusplus.git
+[submodule "c++_for_beginner"]
+	path = c++_for_beginner
+	url = https://github.com/segin-GH/c_plusplus.git
