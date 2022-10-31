@@ -46,13 +46,26 @@ public:
         if(m_logLevel  >= Verbos)
             std::cout << "[VERBOS]: " << data << std::endl;
     }
+
+    // Log() = delete;
+    
+    Log(logLevel log_level = logLevel::Error)
+    {
+        setLevel(log_level);
+    }
+
+    ~Log()
+    {
+        std::cout << "Kaboom" << std::endl;
+    }
+
 };
 
 
 int main(void)
 {
    Log uartLog;
-   uartLog.setLevel(Log::Error);
+   uartLog.setLevel(Log::Verbos);
    uartLog.info("init of drivers complete ");
    uartLog.warn("drivers are not init properly ");
    uartLog.error("drivers are not installed ");
