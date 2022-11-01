@@ -11,8 +11,6 @@ int main ()
     S_speed = S_level > 5 && S_level < 100 ? 10 : 5; 
     S_speed = S_level > 5 ? S_level > 10 ? 15 : 10 : 5;    
 
-
-
     std::string rank = S_level > 10 ? "Master" : "NOOB"; 
     std::cout << S_speed << std::endl;
 }
