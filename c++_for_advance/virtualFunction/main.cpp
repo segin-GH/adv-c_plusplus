@@ -15,7 +15,7 @@ class Player : public Entity
 
     public:
         Player(const std::string &name)
-            : m_Name(name) {};
+            : m_Name(name) {}; // <-- member initlizer List
         std::string GetName() override {return m_Name;}
 };
 
