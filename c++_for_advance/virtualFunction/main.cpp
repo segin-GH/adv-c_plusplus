@@ -40,7 +40,4 @@ int main()
     Entity * entity = p;
     // std::cout << entity->GetName() << std::endl;
     PrintName(p);
-
-
-
 }
