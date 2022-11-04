@@ -12,7 +12,7 @@ void forEach(std::vector <int>& values, void(*func)(int))
 int main (void)
 {
     std::vector <int> values = {0,1,2,3,4,5};
-    forEach(values, [](int value){std::cout << "Values" << std::endl; });
-
+    forEach(values, [](int value){std::cout << "Values" << std::endl;});
+    forEach(values, [](int value){std::cout << value << std::endl;});
 }
 
