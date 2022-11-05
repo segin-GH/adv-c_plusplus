@@ -40,8 +40,8 @@ int main(void) // <-entery point
     printHello("Luffy");
 
 }
-
 ```
+
 ## RangeBasedForLoop
 
 ```
@@ -62,7 +62,6 @@ int main(void)
 }
 ```
 
-```
 ## Lambada
 
 ```
