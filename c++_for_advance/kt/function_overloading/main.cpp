@@ -1,22 +1,23 @@
 #include <iostream> // <- preprocessor Statement // header files
 #include <string>
 
+using std::cout;
 
-void printHelloWorld(void)
+void printHello(void)
 {
-   std::cout << "HelloWorld!" << std::endl; // <- code 
+   cout << "HelloWorld!" << std::endl; // <- code 
 }
 
 
-void printHelloWorld(std::string name)
+void printHello(std::string name)
 {
-   std::cout << "HelloWorld " << name << std::endl; // <- code 
+   std::cout << "Hello " << name << std::endl; // <- code 
 }
 
 
 int main(void) // <-entery point
 {
-    printHelloWorld();
-    printHelloWorld("Luffy");
+    printHello();
+    printHello("Luffy");
 
 }
