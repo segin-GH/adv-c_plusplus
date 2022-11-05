@@ -83,26 +83,6 @@ int main (void)
     forEach(values, [](int value){std::cout << value << std::endl;});
 }
 
-
-```
-## RangeBasedForLoop
-
-```
-#include <iostream>
-#include <vector>
-
-int main(void)
-{
-    int arr[] = {1,2,3,4};
-    std::vector <int> victor = {1,2,3,4,5,6};
-
-    for(auto i : victor)
-        std::cout << i << "\t";
-    
-    std::cout << std ::endl; 
-
-    return 0;
-}
 ```
 ## Template
 
