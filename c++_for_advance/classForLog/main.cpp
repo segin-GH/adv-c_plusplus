@@ -33,7 +33,6 @@ public:
         if(m_logLevel  >= Warn)
             std::cout << "[WARN]: " << data << std::endl;
     }
-    
 
     void error(const char *data)
     {
@@ -53,12 +52,6 @@ public:
     {
         setLevel(log_level);
     }
-
-    ~Log()
-    {
-        std::cout << "Kaboom" << std::endl;
-    }
-
 };
 
 
