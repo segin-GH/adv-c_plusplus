@@ -3,7 +3,7 @@
 
 void SRC::PrintH::printHello()
 {
-    std::cout << "HelloWorld" << std::endl;
+    std::cout << "Hello World!" << std::endl;
 }
 
 void SRC::PrintH::printHello(std::string name)
