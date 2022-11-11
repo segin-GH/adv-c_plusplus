@@ -4,5 +4,5 @@ int main ()
 {
     SRC::PrintH per;
     per.printHello();
-    per.printHello("ace");
+    per.printHello("luffy");
 }

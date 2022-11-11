@@ -1,21 +1,28 @@
 CC=g++
 INCDIRS=-I.
 OPT=-O3
-CFLAGS=-g $(INCDIRS) $(OPT)
+CXXFLAGS=$(INCDIRS) $(OPT)
 
-CFILES=main.cpp helloWorld.cpp
+CXXFILES=main.cpp helloWorld.cpp
 OBJECTS=main.o helloWorld.o
 
-BINARY=bin
+BINARY= bin
+
+#1 rule
 
 all: $(BINARY)
 
+#2 rule
 $(BINARY): $(OBJECTS)
 	$(CC) -o $@ $^
+# g++ -o bin main.o helloWorld.o
+
 
 # regular expression where % is a wildcard
+# 3 rule
 %.o:%.cpp
-	$(CC) $(CFLAGS) -c -o $@ $^
+	$(CC) $(CXXFLAGS) -c -o $@ $^
 
+#4 rule
 clean:
 	rm -rf $(BINARY) $(OBJECTS)
