@@ -1,6 +1,6 @@
 CC=g++
 INCDIRS=-I.
-OPT=-O0
+OPT=-O3
 CFLAGS=-g $(INCDIRS) $(OPT)
 
 CFILES=main.cpp helloWorld.cpp
