@@ -1,7 +1,6 @@
 # KT c++ (not for noobs)*
 
 
-
 ## HelloWorld in c++
 
 ```
